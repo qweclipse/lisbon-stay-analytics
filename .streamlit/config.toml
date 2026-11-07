@@ -1,0 +1,17 @@
+[server]
+address = "127.0.0.1"
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
+
+[theme]
+base = "dark"
+primaryColor = "#8cebc6"
+backgroundColor = "#1a1e23"
+secondaryBackgroundColor = "#2a3037"
+textColor = "#eef2f5"
+borderColor = "#434d57"
+showWidgetBorder = true

@@ -1,0 +1,84 @@
+{
+  "schema": 2,
+  "files": {
+    "listings": {
+      "url": "https://data.insideairbnb.com/portugal/lisbon/lisbon/2026-09-19/data/listings.csv.gz",
+      "bytes": 14090863,
+      "sha256": "ed2591fcde456fed97b0ff0d2aacc15d16ace76dbf2f9387e403325232d83634"
+    },
+    "reviews": {
+      "url": "https://data.insideairbnb.com/portugal/lisbon/lisbon/2026-09-19/data/reviews.csv.gz",
+      "bytes": 259117208,
+      "sha256": "1f80b7ef1d36eb12c9aa60f81c1c4e053ba4b8c26e1c6ef508a5e6bce51e35d3"
+    },
+    "calendar": {
+      "url": "https://data.insideairbnb.com/portugal/lisbon/lisbon/2026-09-19/data/calendar.csv.gz",
+      "bytes": 21893864,
+      "sha256": "b75cc691bd887bd80917059c8ee1d8350ec5872b87c9406712d01c207b013b4c"
+    }
+  },
+  "holdout": {
+    "seed": 20,
+    "train_hosts": 6824,
+    "test_hosts": 1705,
+    "train_listings": 17283,
+    "test_listings": 4760,
+    "assessed": 3899,
+    "mae_eur": 63.55191587586561,
+    "median_absolute_error_eur": 34.0,
+    "mbe_eur": -27.371587586560654,
+    "typical_coverage": 0.4888432931520903,
+    "typical_hits": 1906,
+    "assessment_coverage": 0.8191176470588235,
+    "global_median_eur": 139.68,
+    "global_median_mae_eur": 80.8759015132085,
+    "room_types": [
+      {
+        "room_type": "Entire home/apt",
+        "test": 3704,
+        "assessed": 3139,
+        "mae_eur": 67.12961452691941,
+        "mbe_eur": -27.566734628862694
+      },
+      {
+        "room_type": "Hotel room",
+        "test": 36,
+        "assessed": 0,
+        "mae_eur": null,
+        "mbe_eur": null
+      },
+      {
+        "room_type": "Private room",
+        "test": 991,
+        "assessed": 760,
+        "mae_eur": 48.77507894736843,
+        "mbe_eur": -26.565578947368422
+      },
+      {
+        "room_type": "Shared room",
+        "test": 29,
+        "assessed": 0,
+        "mae_eur": null,
+        "mbe_eur": null
+      }
+    ]
+  },
+  "replay_demo": {
+    "listing_id": 25608771,
+    "price_eur": 273.0,
+    "peers": 249,
+    "p25_eur": 95.0,
+    "median_eur": 118.0,
+    "p75_eur": 149.76,
+    "p10_eur": 79.32,
+    "p90_eur": 188.2,
+    "events": 40,
+    "start_date": "2022-10-19",
+    "end_date": "2026-08-30",
+    "firings": [
+      28
+    ],
+    "active_events": 2,
+    "p95_processing_ms": 0.003514999999999999
+  }
+}

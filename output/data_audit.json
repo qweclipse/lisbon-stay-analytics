@@ -1,0 +1,63 @@
+{
+  "schema": 2,
+  "snapshot": "2026-09-19",
+  "files": {
+    "listings": {
+      "url": "https://data.insideairbnb.com/portugal/lisbon/lisbon/2026-09-19/data/listings.csv.gz",
+      "bytes": 14090863,
+      "sha256": "ed2591fcde456fed97b0ff0d2aacc15d16ace76dbf2f9387e403325232d83634"
+    },
+    "reviews": {
+      "url": "https://data.insideairbnb.com/portugal/lisbon/lisbon/2026-09-19/data/reviews.csv.gz",
+      "bytes": 259117208,
+      "sha256": "1f80b7ef1d36eb12c9aa60f81c1c4e053ba4b8c26e1c6ef508a5e6bce51e35d3"
+    },
+    "calendar": {
+      "url": "https://data.insideairbnb.com/portugal/lisbon/lisbon/2026-09-19/data/calendar.csv.gz",
+      "bytes": 21893864,
+      "sha256": "b75cc691bd887bd80917059c8ee1d8350ec5872b87c9406712d01c207b013b4c"
+    }
+  },
+  "listings": {
+    "rows": 25020,
+    "prices_filled": 22043,
+    "prices_usable": 22043,
+    "min_price_eur": 14.0,
+    "max_price_eur": 13610.67,
+    "scraped_min": "2026-09-19",
+    "scraped_max": "2026-09-22"
+  },
+  "reviews": {
+    "rows": 1950076,
+    "unknown_listing": 0,
+    "invalid_event": 0,
+    "after_scrape": 0,
+    "stored": 1948486,
+    "duplicate_rows": 1147,
+    "ambiguous_ids": 443,
+    "with_text": 1941785,
+    "flagged": 1025,
+    "min_date": "2010-07-24",
+    "max_date": "2026-09-21",
+    "with_author": 1948486
+  },
+  "calendar": {
+    "rows": 9132343,
+    "available": 5703656,
+    "unavailable": 3428687,
+    "unknown_availability": 0,
+    "unknown_listing_rows": 0,
+    "price_columns": [],
+    "filled_daily_prices": 0,
+    "columns": [
+      "listing_id",
+      "date",
+      "available",
+      "minimum_nights",
+      "maximum_nights"
+    ],
+    "listing_count": 25020,
+    "min_date": "2026-09-19",
+    "max_date": "2027-09-21"
+  }
+}

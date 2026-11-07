@@ -1,0 +1,230 @@
+{
+  "schema": 2,
+  "files": {
+    "listings": {
+      "url": "https://data.insideairbnb.com/portugal/lisbon/lisbon/2026-09-19/data/listings.csv.gz",
+      "bytes": 14090863,
+      "sha256": "ed2591fcde456fed97b0ff0d2aacc15d16ace76dbf2f9387e403325232d83634"
+    },
+    "reviews": {
+      "url": "https://data.insideairbnb.com/portugal/lisbon/lisbon/2026-09-19/data/reviews.csv.gz",
+      "bytes": 259117208,
+      "sha256": "1f80b7ef1d36eb12c9aa60f81c1c4e053ba4b8c26e1c6ef508a5e6bce51e35d3"
+    },
+    "calendar": {
+      "url": "https://data.insideairbnb.com/portugal/lisbon/lisbon/2026-09-19/data/calendar.csv.gz",
+      "bytes": 21893864,
+      "sha256": "b75cc691bd887bd80917059c8ee1d8350ec5872b87c9406712d01c207b013b4c"
+    }
+  },
+  "bias": {
+    "seed": 20,
+    "train_per_arm": 12098,
+    "control_private": 2782,
+    "reduced_private": 927,
+    "groups": [
+      {
+        "group": "all",
+        "test": 4760,
+        "common": 3401,
+        "control_assessed": 3587,
+        "reduced_assessed": 3560,
+        "control_mae": 63.8045971563981,
+        "reduced_mae": 64.83285393258427,
+        "control_common_mae": 65.2452778594531,
+        "reduced_common_mae": 65.01715083798884
+      },
+      {
+        "group": "Private room",
+        "test": 991,
+        "common": 471,
+        "control_assessed": 657,
+        "reduced_assessed": 471,
+        "control_mae": 49.56971080669711,
+        "reduced_mae": 53.79222929936306,
+        "control_common_mae": 54.35116772823779,
+        "reduced_common_mae": 53.79222929936306
+      },
+      {
+        "group": "other",
+        "test": 3769,
+        "common": 2930,
+        "control_assessed": 2930,
+        "reduced_assessed": 3089,
+        "control_mae": 66.99651535836178,
+        "reduced_mae": 66.51629006150858,
+        "control_common_mae": 66.99651535836178,
+        "reduced_common_mae": 66.82156655290102
+      }
+    ]
+  },
+  "policy": {
+    "priced": 22043,
+    "eligible": 18376,
+    "with_events": 16598,
+    "above_p75_listings": 4043,
+    "changed_sufficient_listings": 2929,
+    "events": 459283,
+    "enough_text": 293235,
+    "price_only": 102840,
+    "combined": 2,
+    "text_withholds": 63599,
+    "text_waits": 39239,
+    "combined_firings": 1
+  },
+  "noise": {
+    "listings": 213,
+    "events": 5932,
+    "clean_flags": 71,
+    "clean_reviews": 2,
+    "clean_firings": 1,
+    "format_flags": 71,
+    "format_flag_flips": 0,
+    "format_reviews": 2,
+    "format_decision_flips": 0,
+    "format_firings": 1,
+    "typo_flags": 1,
+    "typo_flag_flips": 70,
+    "typo_reviews": 0,
+    "typo_decision_flips": 2,
+    "typo_firings": 0
+  },
+  "author_activity": {
+    "train_cutoff": "2025-06-01",
+    "test_cutoff": "2026-06-01",
+    "lookback_days": 365,
+    "future_days": 90,
+    "threshold": 0.5,
+    "test_size": 62020,
+    "test_positive": 735,
+    "models": [
+      {
+        "model": "baseline",
+        "train_size": 228074,
+        "train_positive": 2436,
+        "precision": 0.875,
+        "recall": 0.009523809523809525,
+        "macro_f1": 0.506464988832893,
+        "balanced_accuracy": 0.5047537461586576,
+        "average_precision": 0.06850705248453781,
+        "roc_auc": 0.6193956972525488,
+        "confusion": [
+          [
+            61284,
+            1
+          ],
+          [
+            728,
+            7
+          ]
+        ]
+      },
+      {
+        "model": "smote",
+        "train_size": 451276,
+        "train_positive": 225638,
+        "precision": 0.045349907918968695,
+        "recall": 0.2680272108843537,
+        "macro_f1": 0.5190958354175048,
+        "balanced_accuracy": 0.6001798777763533,
+        "average_precision": 0.06850705248453781,
+        "roc_auc": 0.6193956972525488,
+        "confusion": [
+          [
+            57138,
+            4147
+          ],
+          [
+            538,
+            197
+          ]
+        ]
+      }
+    ],
+    "curves": [
+      {
+        "model": "baseline",
+        "reviews": 8.100000000000001,
+        "days": 1.1395241295491587
+      },
+      {
+        "model": "baseline",
+        "reviews": 8.2,
+        "days": 32.78578105168788
+      },
+      {
+        "model": "baseline",
+        "reviews": 8.3,
+        "days": 64.08990957661736
+      },
+      {
+        "model": "baseline",
+        "reviews": 8.4,
+        "days": 95.05922817038548
+      },
+      {
+        "model": "baseline",
+        "reviews": 8.5,
+        "days": 125.70082295797289
+      },
+      {
+        "model": "baseline",
+        "reviews": 8.600000000000001,
+        "days": 156.02155745530737
+      },
+      {
+        "model": "baseline",
+        "reviews": 8.7,
+        "days": 186.02808179700605
+      },
+      {
+        "model": "baseline",
+        "reviews": 8.8,
+        "days": 215.72684149087277
+      },
+      {
+        "model": "baseline",
+        "reviews": 8.9,
+        "days": 245.12408572797355
+      },
+      {
+        "model": "baseline",
+        "reviews": 9.0,
+        "days": 274.2258752751178
+      },
+      {
+        "model": "baseline",
+        "reviews": 9.1,
+        "days": 303.0380899746356
+      },
+      {
+        "model": "baseline",
+        "reviews": 9.200000000000001,
+        "days": 331.5664358747091
+      },
+      {
+        "model": "baseline",
+        "reviews": 9.3,
+        "days": 359.81645201185074
+      },
+      {
+        "model": "smote",
+        "reviews": 1.1,
+        "days": 114.94675071097357
+      },
+      {
+        "model": "smote",
+        "reviews": 1.2,
+        "days": 338.8204362742082
+      }
+    ]
+  },
+  "annotation": {
+    "size": 60,
+    "strata": {
+      "matched": 24,
+      "unmatched_price_like": 12,
+      "unmatched_random": 24
+    }
+  }
+}

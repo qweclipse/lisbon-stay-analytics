@@ -1,0 +1,229 @@
+{
+  "snapshot": "2026-09-19",
+  "files": {
+    "listings": {
+      "url": "https://data.insideairbnb.com/portugal/lisbon/lisbon/2026-09-19/data/listings.csv.gz",
+      "bytes": 14090863,
+      "sha256": "ed2591fcde456fed97b0ff0d2aacc15d16ace76dbf2f9387e403325232d83634"
+    },
+    "reviews": {
+      "url": "https://data.insideairbnb.com/portugal/lisbon/lisbon/2026-09-19/data/reviews.csv.gz",
+      "bytes": 259117208,
+      "sha256": "1f80b7ef1d36eb12c9aa60f81c1c4e053ba4b8c26e1c6ef508a5e6bce51e35d3"
+    },
+    "calendar": {
+      "url": "https://data.insideairbnb.com/portugal/lisbon/lisbon/2026-09-19/data/calendar.csv.gz",
+      "bytes": 21893864,
+      "sha256": "b75cc691bd887bd80917059c8ee1d8350ec5872b87c9406712d01c207b013b4c"
+    }
+  },
+  "feedback_window": [
+    "2025-09-19",
+    "2026-09-19"
+  ],
+  "author_cutoff": "2026-06-01",
+  "eda": [
+    {
+      "room_type": "Entire home/apt",
+      "listings": 18658,
+      "missing": 1863,
+      "p10": 93.726,
+      "p25": 118.07,
+      "p50": 159.0,
+      "p75": 230.0,
+      "p90": 352.0,
+      "max": 13610.67
+    },
+    {
+      "room_type": "Hotel room",
+      "listings": 152,
+      "missing": 9,
+      "p10": 64.3,
+      "p25": 118.0,
+      "p50": 196.0,
+      "p75": 646.8,
+      "p90": 993.8399999999999,
+      "max": 1453.2
+    },
+    {
+      "room_type": "Private room",
+      "listings": 6065,
+      "missing": 1099,
+      "p10": 43.0,
+      "p25": 55.0,
+      "p50": 75.0,
+      "p75": 111.875,
+      "p90": 168.15,
+      "max": 2853.0
+    },
+    {
+      "room_type": "Shared room",
+      "listings": 145,
+      "missing": 6,
+      "p10": 18.708000000000002,
+      "p25": 22.5,
+      "p50": 30.0,
+      "p75": 43.75,
+      "p90": 76.00000000000001,
+      "max": 467.2
+    }
+  ],
+  "review_availability": [
+    {
+      "activity": "0",
+      "listings": 6151,
+      "missing_price": 1551,
+      "reviews": 0,
+      "texts": 0,
+      "flags": 0,
+      "median_eur": 140.68
+    },
+    {
+      "activity": "1–9",
+      "listings": 8675,
+      "missing_price": 1072,
+      "reviews": 33968,
+      "texts": 33728,
+      "flags": 35,
+      "median_eur": 139.57
+    },
+    {
+      "activity": "10–49",
+      "listings": 8971,
+      "missing_price": 342,
+      "reviews": 218220,
+      "texts": 217171,
+      "flags": 120,
+      "median_eur": 142.65
+    },
+    {
+      "activity": "50+",
+      "listings": 1223,
+      "missing_price": 12,
+      "reviews": 80737,
+      "texts": 80327,
+      "flags": 43,
+      "median_eur": 131.0
+    }
+  ],
+  "segments": [
+    {
+      "segment": "Повторная давняя",
+      "authors": 2915,
+      "past_reviews": 6243,
+      "future_repeat": 82,
+      "repeat_rate": 0.028130360205831904
+    },
+    {
+      "segment": "Повторная недавняя",
+      "authors": 1429,
+      "past_reviews": 3356,
+      "future_repeat": 115,
+      "repeat_rate": 0.08047585724282715
+    },
+    {
+      "segment": "Разовая давняя",
+      "authors": 41579,
+      "past_reviews": 41579,
+      "future_repeat": 368,
+      "repeat_rate": 0.008850621708073787
+    },
+    {
+      "segment": "Разовая недавняя",
+      "authors": 16097,
+      "past_reviews": 16097,
+      "future_repeat": 170,
+      "repeat_rate": 0.01056097409455178
+    }
+  ],
+  "policy_funnel": {
+    "above_p75": 102840,
+    "firings": 1,
+    "five_texts": 63601,
+    "two_flags": 2,
+    "share_20": 2
+  },
+  "annotation": {
+    "all": {
+      "n": 60,
+      "unclear": 1,
+      "scope_counts": {
+        "none": 34,
+        "lodging": 21,
+        "both": 2,
+        "extras": 2,
+        "unclear": 1
+      },
+      "lodging": {
+        "tn": 34,
+        "fp": 2,
+        "fn": 2,
+        "tp": 21,
+        "precision": 0.9130434782608695,
+        "recall": 0.9130434782608695
+      },
+      "any_price": {
+        "tn": 34,
+        "fp": 0,
+        "fn": 2,
+        "tp": 23,
+        "precision": 1.0,
+        "recall": 0.92
+      }
+    },
+    "control": {
+      "n": 30,
+      "unclear": 0,
+      "scope_counts": {
+        "none": 16,
+        "lodging": 12,
+        "both": 1,
+        "extras": 1
+      },
+      "lodging": {
+        "tn": 16,
+        "fp": 1,
+        "fn": 2,
+        "tp": 11,
+        "precision": 0.9166666666666666,
+        "recall": 0.8461538461538461
+      },
+      "any_price": {
+        "tn": 16,
+        "fp": 0,
+        "fn": 2,
+        "tp": 12,
+        "precision": 1.0,
+        "recall": 0.8571428571428571
+      }
+    },
+    "development": {
+      "n": 30,
+      "unclear": 1,
+      "scope_counts": {
+        "none": 18,
+        "lodging": 9,
+        "extras": 1,
+        "both": 1,
+        "unclear": 1
+      },
+      "lodging": {
+        "tn": 18,
+        "fp": 1,
+        "fn": 0,
+        "tp": 10,
+        "precision": 0.9090909090909091,
+        "recall": 1.0
+      },
+      "any_price": {
+        "tn": 18,
+        "fp": 0,
+        "fn": 0,
+        "tp": 11,
+        "precision": 1.0,
+        "recall": 1.0
+      }
+    }
+  },
+  "annotation_status": "preliminary_machine_not_human"
+}
